@@ -40,6 +40,7 @@ body {
   padding: 8px 16px;
   gap: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -139,7 +140,7 @@ body {
   background-position: center right;
   padding: 68px;
   border-radius: 10px;
-  background-color: #FFF1B8;
+  background-color: #fff1b8;
 }
 
 .banner-item--title {
@@ -203,14 +204,15 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 30px;
-} 
+}
 
 .restorants-card {
   width: calc((100% - 48px) / 3);
   border-radius: 7px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .restorants-card__image {
@@ -247,7 +249,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: #FFF;
+  color: #fff;
   border-radius: 2px;
   background-color: #262626;
   padding: 1px 8px;
@@ -285,7 +287,7 @@ body {
 }
 
 .restorants-card__description-info--group::before {
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 5px;
@@ -305,10 +307,10 @@ body {
 }
 
 .restorants-card__description--text {
-font-weight: 400;
-font-size: 18px;
-color: #8C8C8C;
-margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #8c8c8c;
+  margin: 0 0 20px 0;
 }
 
 .restorants-card__description-controls {
@@ -327,11 +329,130 @@ margin: 0;
   color: #000;
 }
 
+.cart-modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-modal__overlay.open {
+  display: flex;
+}
+
+.cart-modal {
+  width: 100%;
+  max-width: 780px;
+  padding: 40px 45px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.cart-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.cart-modal__header--title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  margin: 0;
+}
+
+.cart-modal__header--close {
+  cursor: pointer;
+}
+
+.cart-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.cart-modal__footer--price {
+  border-radius: 5px;
+  background: #262626;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fafafa;
+  padding: 15px 20px;
+}
+
+.cart-modal__footer--controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-modal__footer--controls {
+  margin-left: 15px;
+}
+
+.cart-modal__footer--total {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.cart-item__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000;
+  margin: 0;
+}
+
+.cart-item__controls {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item__controls--price {
+  margin-right: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+}
+
+.cart-item__controls button {
+  border: 1px solid #40a9ff;
+  color: #40a9ff;
+}
+
+.cart-item__controls--count {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 @media (max-width: 991px) {
   .banner-item {
     background-image: none;
   }
-  
+
   .banner-item--title,
   .banner-item--subtitle {
     max-width: 100%;
@@ -344,6 +465,6 @@ margin: 0;
 
 @media (max-width: 610px) {
   .restorants-card {
-    width: 100%
+    width: 100%;
   }
 }
