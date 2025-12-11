@@ -133,12 +133,13 @@ body {
 }
 
 .banner-item {
-  background-image: url(./images/banners/banners.jpg);
+  background-image: url(./images/banners/banner-img.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   padding: 68px;
   border-radius: 10px;
+  background-color: #FFF1B8;
 }
 
 .banner-item--title {
@@ -158,20 +159,20 @@ body {
   margin: 0;
 }
 
-.restorants {
-}
-
 .restorants-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .restorants-header--title {
   font-weight: 700;
   font-size: 36px;
   color: #000;
+  margin: 0;
 }
 
 .restorants-header--search {
@@ -195,9 +196,154 @@ body {
   color: #bfbfbf;
 }
 
+.restorants-wrapper {
+  margin-top: 44px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 30px;
+} 
+
+.restorants-card {
+  width: calc((100% - 48px) / 3);
+  border-radius: 7px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  background: #FFF;
+  overflow: hidden;
+}
+
+.restorants-card__image {
+  width: 100%;
+}
+
+.restorants-card__image img {
+  width: 100%;
+}
+
+.restorants-card__description {
+  padding: 20px 24px 34px 24px;
+}
+
+.restorants-card__description--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restorants-card__description--row:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.restorants-card__description--title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  margin: 0;
+}
+
+.restorants-card__description--badge {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFF;
+  border-radius: 2px;
+  background-color: #262626;
+  padding: 1px 8px;
+}
+
+.restorants-card__description-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 25px;
+}
+
+.restorants-card__description-info--raiting {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffc107;
+}
+
+.restorants-card__description-info--price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+}
+
+.restorants-card__description-info--group {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+  position: relative;
+}
+
+.restorants-card__description-info--group::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #8c8c8c;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+}
+
+.restorants-card__description--name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  margin: 0;
+}
+
+.restorants-card__description--text {
+font-weight: 400;
+font-size: 18px;
+color: #8C8C8C;
+margin: 0;
+}
+
+.restorants-card__description-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 30px;
+}
+
+.restorants-card__description-controls--price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+}
+
 @media (max-width: 991px) {
+  .banner-item {
+    background-image: none;
+  }
+  
   .banner-item--title,
   .banner-item--subtitle {
     max-width: 100%;
+  }
+
+  .restorants-card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 610px) {
+  .restorants-card {
+    width: 100%
   }
 }
