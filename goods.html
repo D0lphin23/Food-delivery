@@ -1,381 +1,337 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Delivery Food</title>
-  </head>
 
-  <body>
-    <div class="page-wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header-box">
-            <a href="/index.html" class="header-logo logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <div class="header-controls">
-              <button class="btn btn-primary">
-                <img src="./images/icons/user.png" alt="user" />
-                Войти
-              </button>
-              <button class="btn btn-outline">
-                <img
-                  src="./images/icons/shopping-cart.png"
-                  alt="shopping-cart"
-                />
-                Корзина
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="./script/index.js" defer></script>
+  <title>Delivery Food</title>
+</head>
 
-      <main class="main">
-        <section class="restorants">
-          <div class="container">
-            <div class="restorants-wrapper">
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img
-                    src="./images/goods/eel-standart.jpg"
-                    alt="eel-standart"
-                  />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Ролл угорь стандарт
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, угорь, соус унаги, кунжут, водоросли нори.
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        250 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img
-                    src="./images/goods/california-salmon.jpg"
-                    alt="california-salmon"
-                  />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Калифорния лосось стандарт
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, лосось, авокадо, огурец, майонез, икра масаго,
-                      водоросли нори.
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        395 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img
-                    src="./images/goods/okinava-standart.jpg"
-                    alt="okinava-standart"
-                  />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Окинава стандарт
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, креветка отварная, сыр сливочный, лосось, огурец
-                      свежий...
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        250 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img src="./images/goods/cezar-maki.jpg" alt="cezar-maki" />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Цезарь маки хl
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, куриная грудка копченая, икра масаго, томат, айсберг,
-                      соус цезарь...
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        250 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img src="./images/goods/yasay-maki.jpg" alt="yasay-maki" />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Ясай маки стандарт 185 г
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, помидор свежий, перец болгарский, авокадо, огурец,
-                      айсберг
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        250 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="restorants-card">
-                <div class="restorants-card__image">
-                  <img
-                    src="./images/goods/shrimp-standart.jpg"
-                    alt="shrimp-standart"
-                  />
-                </div>
-                <div class="restorants-card__description">
-                  <div class="restorants-card__description--row">
-                    <h5 class="restorants-card__description--name">
-                      Ролл с креветкой стандарт
-                    </h5>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <p class="restorants-card__description--text">
-                      Рис, водоросли нори, креветки отварные, сыр сливочный,
-                      огурец
-                    </p>
-                  </div>
-                  <div class="restorants-card__description--row">
-                    <div class="restorants-card__description-controls">
-                      <button class="btn btn-primary">
-                        В корзину
-                        <img
-                          src="./images/icons/shopping-cart-white.svg"
-                          alt="shopping-cart-white"
-                        />
-                      </button>
-
-                      <span
-                        class="restorants-card__description-controls--price"
-                      >
-                        250 ₽
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <div class="cart-modal__overlay">
-        <div class="cart-modal">
-          <div class="cart-modal__header">
-            <h2 class="cart-modal__header--title">Корзина</h2>
-            <span class="cart-modal__header--close">
-              <img src="./images/icons/close.svg" alt="close" />
-            </span>
-          </div>
-
-          <div class="cart-modal__body">
-            <div class="cart-item">
-              <p class="cart-item__title">Ролл угорь стандарт</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">250 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">1</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-
-            <div class="cart-item">
-              <p class="cart-item__title">Калифорния лосось стандарт</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">395 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">1</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-
-            <div class="cart-item">
-              <p class="cart-item__title">Окинава стандарт</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">250 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">1</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-
-            <div class="cart-item">
-              <p class="cart-item__title">Цезарь маки хl</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">250 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">2</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-
-            <div class="cart-item">
-              <p class="cart-item__title">Ясай маки стандарт 185 г</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">250 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">1</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-
-            <div class="cart-item">
-              <p class="cart-item__title">Ролл с креветкой стандарт</p>
-              <div class="cart-item__controls">
-                <div class="cart-item__controls--price">250 ₽</div>
-                <button class="btn btn-outline">-</button>
-                <div class="cart-item__controls--count">2</div>
-                <button class="btn btn-outline">+</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="cart-modal__footer">
-            <div class="cart-modal__footer--price">2145 ₽</div>
-            <div class="cart-modal__footer--controls">
-              <button class="btn btn-primary">Оформить заказ</button>
-              <button class="btn btn-outline">Отмена</button>
-            </div>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-box">
+          <a href="/index.html" class="header-logo logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <div class="header-controls">
+            <button class="btn btn-primary">
+              <img src="./images/icons/user.png" alt="user" />
+              Войти
+            </button>
+            <button class="btn btn-outline" id="cart-button">
+              <img src="./images/icons/shopping-cart.png" alt="shopping-cart" />
+              Корзина
+            </button>
           </div>
         </div>
       </div>
+    </header>
 
-      <footer class="footer">
+    <main class="main">
+      <section class="restorants">
         <div class="container">
-          <div class="footer-box">
-            <a href="/index.html" class="footer-logo logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <div class="footer-nav">
-              <ul>
-                <li>Ресторанам</li>
-                <li>Курьерам</li>
-                <li>Пресс-центр</li>
-                <li>Контакты</li>
-              </ul>
+          <div class="restorants-wrapper" id="products-container">
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/eel-standart.jpg" alt="eel-standart" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Ролл угорь стандарт
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      250 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer-social">
-              <img src="./images/social/INST.png" alt="instagram" />
-              <img src="./images/social/FB.png" alt="facebook" />
-              <img src="./images/social/VK.png" alt="vk" />
+
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/california-salmon.jpg" alt="california-salmon" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Калифорния лосось стандарт
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, лосось, авокадо, огурец, майонез, икра масаго,
+                    водоросли нори.
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      395 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/okinava-standart.jpg" alt="okinava-standart" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Окинава стандарт
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, креветка отварная, сыр сливочный, лосось, огурец
+                    свежий...
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      250 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/cezar-maki.jpg" alt="cezar-maki" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Цезарь маки хl
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, куриная грудка копченая, икра масаго, томат, айсберг,
+                    соус цезарь...
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      250 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/yasay-maki.jpg" alt="yasay-maki" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Ясай маки стандарт 185 г
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, помидор свежий, перец болгарский, авокадо, огурец,
+                    айсберг
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      250 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="restorants-card">
+              <div class="restorants-card__image">
+                <img src="./images/goods/shrimp-standart.jpg" alt="shrimp-standart" />
+              </div>
+              <div class="restorants-card__description">
+                <div class="restorants-card__description--row">
+                  <h5 class="restorants-card__description--name">
+                    Ролл с креветкой стандарт
+                  </h5>
+                </div>
+                <div class="restorants-card__description--row">
+                  <p class="restorants-card__description--text">
+                    Рис, водоросли нори, креветки отварные, сыр сливочный,
+                    огурец
+                  </p>
+                </div>
+                <div class="restorants-card__description--row">
+                  <div class="restorants-card__description-controls">
+                    <button class="btn btn-primary">
+                      В корзину
+                      <img src="./images/icons/shopping-cart-white.svg" alt="shopping-cart-white" />
+                    </button>
+
+                    <span class="restorants-card__description-controls--price">
+                      250 ₽
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+    </main>
+
+    <div class="cart-modal__overlay">
+      <div class="cart-modal">
+        <div class="cart-modal__header">
+          <h2 class="cart-modal__header--title">Корзина</h2>
+          <span class="cart-modal__header--close">
+            <img src="./images/icons/close.svg" alt="close" />
+          </span>
+        </div>
+
+        <div class="cart-modal__body">
+          <div class="cart-item">
+            <p class="cart-item__title">Ролл угорь стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <p class="cart-item__title">Калифорния лосось стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">395 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <p class="cart-item__title">Окинава стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <p class="cart-item__title">Цезарь маки хl</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">2</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <p class="cart-item__title">Ясай маки стандарт 185 г</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <p class="cart-item__title">Ролл с креветкой стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">2</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-modal__footer">
+          <div class="cart-modal__footer--price">2145 ₽</div>
+          <div class="cart-modal__footer--controls">
+            <button class="btn btn-primary">Оформить заказ</button>
+            <button class="btn btn-outline">Отмена</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <a href="/index.html" class="footer-logo logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <div class="footer-nav">
+            <ul>
+              <li>Ресторанам</li>
+              <li>Курьерам</li>
+              <li>Пресс-центр</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <img src="./images/social/INST.png" alt="instagram" />
+            <img src="./images/social/FB.png" alt="facebook" />
+            <img src="./images/social/VK.png" alt="vk" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
